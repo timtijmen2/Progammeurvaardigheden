@@ -4,11 +4,16 @@ import time
 print("Name: " + sys.argv[1])
 print("Nummer: " + sys.argv[2])
 name = sys.argv[1]
-nummer = sys.argv[2]
-if not len(nummer) == 10:
+try:
+    int(nummer) = sys.argv[2]
+    if not len(nummer) == 10:
     print()
     print("Telefoon nummer is niet goed")
     exit()
+except ValueError:
+    print("Dat is geen echt telefoon nummer.")
+    exit()
+
 print()
 print()
 print("Calling", name + "...")
