@@ -1,0 +1,13 @@
+list = []
+print(list)
+list.append("Hallo")
+print(list)
+list.append("Hi")
+print(list)
+list.insert(2, int(4))
+print(list)
+print(list.count("Hallo"))
+list.append(float(1.5))
+print(list)
+list.append(float(4.5))
+print(list)
